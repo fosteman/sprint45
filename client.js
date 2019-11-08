@@ -7,7 +7,7 @@ import {
 
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
-    fullScreen: false,
+    fullScreen: true,
     ...options,
   })
 
@@ -16,12 +16,14 @@ function init(bundle, parent, options = {}) {
   leftPanel.setAngle(-0.6, 0)
   const middlePanel = new Surface(300, 600, Surface.SurfaceShape.Flat)
   middlePanel.setAngle(0, 0)
-  const rightPanel = new Surface(300, 600, Surface.SurfaceShape.Flat)
+  const rightPanel = new Surface(700, 600, Surface.SurfaceShape.Flat)
   rightPanel.setAngle(0.6, 0)
+
+  // const panoramic = new Surface(3096, 720, Surface.SurfaceShape.Cylinder)
 
   //Surface rendering
   r360.renderToSurface(
-    r360.createRoot('TopPosts'), //Like-Dislike panel
+    r360.createRoot('LocationHeader'),
     leftPanel,
   )
   r360.renderToSurface(
@@ -29,13 +31,8 @@ function init(bundle, parent, options = {}) {
     middlePanel,
   )
   r360.renderToSurface(
-    r360.createRoot('CurrentPost'), //LocationDetail Sections
+    r360.createRoot('LocationDetails'), //LocationDetail Sections
     rightPanel,
-  )
-  // Camera View
-  r360.renderToLocation(
-    r360.createRoot('ModelView'),
-    new Location([0, -2, -10]),
   )
 
   // Load the initial environment

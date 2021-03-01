@@ -5156,6 +5156,14 @@ react-transform-hmr@^1.0.4:
     global "^4.3.0"
     react-proxy "^1.1.7"
 
+react-vr@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-vr/-/react-vr-2.0.0.tgz#8e0f2558eef72b343d420528dd1168ff213730d4"
+  integrity sha512-H6OVjxg5utGzZBuC1JGtq5xZlUFF/cIry2n0I76RMlKmoy7p3gb8qKqD/9qJMJ+GqFKsmg6rjoRJ5kWt9sjDwA==
+  dependencies:
+    create-react-class "^15.6.0"
+    prop-types "^15.5.10"
+
 react@16.3.2:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.3.2.tgz#fdc8420398533a1e58872f59091b272ce2f91ea9"
@@ -5941,10 +5949,10 @@ three-gltf2-loader@~1.2.0:
   resolved "https://registry.yarnpkg.com/three-gltf2-loader/-/three-gltf2-loader-1.2.0.tgz#1fffae0659b1490034e6d055c7aabc439ab5de21"
   integrity sha512-CFB9wcKTBpADh6wVq32XYx81LyNS7j8e8edgdMEBLedz+Wle1Ytbh8h6qEa4XFLR4dFArVmwC244EQOyXUYfqA==
 
-three@^0.87.0:
-  version "0.87.1"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.87.1.tgz#466a34edc4543459ced9b9d7d276b65216fe2ba8"
-  integrity sha1-Rmo07cRUNFnO2bnX0na2Uhb+K6g=
+three@^0.125.0:
+  version "0.125.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.125.0.tgz#19e922b9dc51ad0b706893aeee888de68e99850a"
+  integrity sha512-qL36qUGsPQ/Ofo/RZdXwHwM7A8wzUSAIyawtjIebJSPvounUQeneSqxI0aBY2iwKpseGy+RUtj3C5f/z4poyXw==
 
 throat@^3.0.0:
   version "3.2.0"
